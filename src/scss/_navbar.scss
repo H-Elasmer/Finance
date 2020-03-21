@@ -1,0 +1,50 @@
+/* :: 6.0 Navbar CSS */
+.header-area {
+    z-index: 10;
+    width: 100%;
+    @include transition-duration(500ms);
+    .main-header-area {
+        position: relative;
+        .navbar {
+            z-index: 2;
+            .navbar-brand {
+                color: $white;
+            }
+        }
+        .navbar-expand-lg {
+            .navbar-nav {
+                .nav-link {
+                    padding-left: .8rem;
+                    padding-right: .8rem;
+                    color: $white;
+                    @include transition-duration(500ms);
+                    &:hover {
+                        color: $hover;
+                    }
+                }
+            }
+        }
+        .navbar-toggler:focus, 
+        .navbar-toggler:hover {
+            box-shadow: none;
+            border: none;
+            outline: 0;
+            border: 1px solid rgba(255,255,255,.1);
+        }
+    }
+}
+.navbar-collapse {
+    @include media-breakpoint-down(sm){
+        background-color: rgba($bg2-dark, .85);
+        position: absolute;
+        width: 90%;
+        margin: 4rem auto;
+        left: 5%;
+        clear: both;
+        top: 0px;
+        display: block;
+        border-radius: .25rem;
+        padding: .5rem;
+        text-align: center;
+    }
+}

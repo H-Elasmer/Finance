@@ -1,0 +1,109 @@
+/* :: 12.0 Offer CSS */
+
+.offer {
+    overflow: hidden;
+    .offer-content {
+        padding: 50px 0;
+        @include media-breakpoint-down(sm) {
+            
+        }
+        
+        @include media-breakpoint-down(xs) {
+            width: 95%;
+            margin: .5rem auto;
+            padding-top: 0;
+            padding: 10px 0;
+        }
+        h2 {
+            @include media-breakpoint-down(xs) {
+                font-size: 1.7rem;
+            }
+        }
+        p {
+            @include media-breakpoint-down(xs) {
+                width: 95%;
+                margin: 1rem auto;
+            }
+        }
+    }
+    .offer-content-cell {
+        position: relative;
+        text-align: center;
+        margin-bottom: 9rem;
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 9rem;
+        }
+        @include media-breakpoint-down(md) {
+            margin-bottom: 9rem;
+        }
+        @include media-breakpoint-down(xs) {
+            margin-bottom: 15rem;
+        }
+        img {
+            width: 100%;
+        }
+        .offer-content-info {
+            position: absolute;
+            background-color: $white;
+            width: 90%;
+            margin-top: -80px;
+            left: 5%;
+            padding-left: .9rem;
+            padding-right: .9rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-right: 1px solid rgba($text, .3);
+            border-left: 1px solid rgba($text, .3);
+            @include transition-duration(500ms);
+
+            @include media-breakpoint-down(md) {
+                left: 5%;
+                width: 90%;
+            }
+            @include media-breakpoint-down(sm) {
+                left: 5%;
+                width: 90%;
+            }
+            @include media-breakpoint-down(xs) {
+                left: 5%;
+                width: 90%;
+            }
+            h4 {
+                margin-bottom: .2rem;
+                text-align: left !important;
+                @include media-breakpoint-down(lg) {
+                    font-size: 1.2rem;
+                }
+                @include media-breakpoint-down(md) {
+                    font-size: 1.2rem;
+                }
+                @include media-breakpoint-down(sm) {
+                    font-size: 1.2rem;
+                }
+                @include media-breakpoint-down(xs) {
+                    font-size: 1.2rem;
+                }
+            }
+            h6 {
+                margin-bottom: 1rem;
+                text-align: left !important;
+            }
+            p {
+                font-size: .95rem;
+                text-align: left !important;
+            }
+        }
+        &:hover {
+        .offer-content-info {
+            h4 {
+            color: $hover;
+            @include transition-duration(500ms);
+            }
+        }
+        }
+    }
+    .secende-row {
+        margin-top: 125px;
+    }
+}

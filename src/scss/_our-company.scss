@@ -1,0 +1,201 @@
+/* :: 9.0 Our Company CSS */
+
+.our-company {
+    background: url(../img/company-bg.png);
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    @include media-breakpoint-down(xs){
+        padding-bottom: 80px !important;
+    }
+    .company-img {
+        padding-top: 100px;
+        @include media-breakpoint-down(lg) {
+            padding-top: 20px;
+            position: absolute;
+            bottom: 0;
+            }
+            @include media-breakpoint-down(md) {
+                padding-top: 20px;
+            }
+            @include media-breakpoint-down(sm){
+                display: none;
+            }
+            img {
+                @include media-breakpoint-down(lg) {
+                    width: 100%;
+                }
+                @include media-breakpoint-down(md) {
+                    width: 100%;
+                }
+            }
+        }
+    .our-company-content {
+        background: url(../img/company.png) no-repeat center;
+        background-position: 40% -40%;
+        position: relative;
+        @include media-breakpoint-down(lg) {
+            height: 370px !important;
+            background-position: 60% -40%;
+        }
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+        @include media-breakpoint-down(xs){
+            display: none;
+        }
+        .our-company-start {
+            position: absolute;
+            width: 35%;
+            top: 30px;
+            left: 0px;
+            @include media-breakpoint-down(lg) {
+                top: 72px;
+                left: 22px;
+            }
+            h5 {
+                color: $hover;
+                text-align: right;
+                display: block;
+                margin-right: 70px;
+                font-size: 2rem;
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    bottom: 0px;
+                    right: -15px;
+                    height: 1px;
+                    width: 79px;
+                    background-color: #00c4b1;
+                    @include media-breakpoint-down(lg) {
+                        right: -42px;
+                    }
+                }
+                &::after {
+                    position: absolute;
+                    content: '';
+                    bottom: -5px;
+                    right: 60px;
+                    height: 10px;
+                    width: 10px;
+                    border: 1px solid $hover;
+                    border-radius: 50%;
+                    background-color: #00c4b1;
+                    @include media-breakpoint-down(lg) {
+                        right: 35px;
+                    }
+                }
+            }
+            p {
+                font-size: 0.85rem;
+                width: 80%;
+            }
+        }
+        .our-company-middle {
+            position: absolute;
+            right: 270px;
+            top: 60px;
+            @include media-breakpoint-down(lg) {
+                right: 160px;
+                top: 110px;
+            }
+            h5 {
+                color: $hover;
+                display: block;
+                margin-bottom: .2rem;
+            }
+            p {
+                font-size: 0.85rem;
+                margin-bottom: 0;
+                margin-top: -6px;
+                padding-left: 5px;
+            }
+        }
+        .our-company-end {
+            position: absolute;
+            top: 123px;
+            right: -190px;
+            @include media-breakpoint-down(lg) {
+                top: 173px;
+                left: 500px;
+            }
+            p {
+                font-size: 0.85rem;
+                margin-bottom: 0;
+                width: 52%;
+                position: relative;
+                    &::before {
+                    position: absolute;
+                    content: '';
+                    top: -10px;
+                    right: 150px;
+                    height: 1px;
+                    width: 75px;
+                    background-color: #00c4b1;
+                    @include media-breakpoint-down(lg) {
+                        top: -15px;
+                        right: 95px;
+                    }
+                    @include media-breakpoint-down(lg) {
+                        width: 70%;
+                    }
+                }
+                &::after {
+                    position: absolute;
+                    content: '';
+                    top: -15px;
+                    right: 142px;
+                    height: 10px;
+                    width: 10px;
+                    border: 1px solid $hover;
+                    border-radius: 50%;
+                    background-color: #00c4b1;
+                    @include media-breakpoint-down(lg) {
+                        top: -20px;
+                        left: 55px;
+                    }
+                }
+            }
+        }
+        .our-company-end-left {
+            position: absolute;
+            top: 220px;
+            left: 35px;
+            @include media-breakpoint-down(lg) {
+                top: 265px;
+                left: 40px;
+            }
+            p {
+                font-size: 0.85rem;
+                margin-bottom: 0;
+                width: 50%;
+                padding-top: 10px;
+                position: relative;
+                    &::before {
+                    position: absolute;
+                    content: '';
+                    top: 0px;
+                    left: 115px;
+                    height: 1px;
+                    width: 75px;
+                    background-color: #00c4b1;
+                    }
+                    &::after {
+                    position: absolute;
+                    content: '';
+                    top: -5px;
+                    right: 80px;
+                    height: 10px;
+                    width: 10px;
+                    border: 1px solid $hover;
+                    border-radius: 50%;
+                    background-color: #00c4b1;
+                    @include media-breakpoint-down(lg) {
+                        right: 80px;
+                    }
+                }
+            }
+        }
+    }
+}

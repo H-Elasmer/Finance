@@ -1,0 +1,22 @@
+/* :: 4.0 Backtotop CSS */
+
+#scrollUp {
+    position: fixed;
+    right: 30px;
+    font-size: 20px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    bottom: 8px;
+    background-color: $hover;
+    color:  rgba($white, .7);
+    text-align: center;
+    @include transition-duration(500ms);
+    border-radius: 0.25rem;
+    z-index: 15962536;
+    &:focus,
+    &:hover {
+        background-color: $bg-dark;
+        color: $white;
+    }
+}

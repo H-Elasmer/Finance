@@ -1,0 +1,75 @@
+/* :: 11.0 Core Service CSS */
+
+.core-service {
+    background-image: url(../img/core-service.png);
+    @include media-breakpoint-down(lg) {
+        padding-bottom: 0 !important;
+    }
+    @include media-breakpoint-down(md) {
+        padding-bottom: 0 !important;
+    }
+    @include media-breakpoint-down(xs) {
+        padding-top: 2rem !important;
+        padding-bottom: 30px;
+    }
+    .container {
+        @include media-breakpoint-down(md) {
+            padding-bottom: 0 ;
+        }
+        @include media-breakpoint-down(sm) {
+            padding-bottom: 0 ;
+        }
+        @include media-breakpoint-down(xs) {
+            padding-bottom: 3rem ;
+            @include box-shadow(0px 48px 59px -35px rgba(15, 15, 15, 0.15));
+        }
+    }
+    
+    .core-services-content {
+        padding-bottom: 50px;
+        @include media-breakpoint-down(xs) {
+            padding-bottom: 20px;
+        }
+        h2 {
+            text-transform: capitalize;
+        }
+        p {
+            font-size: .95rem;
+            @include media-breakpoint-down(xs) {
+                width: 80%;
+                margin: .5rem auto;
+            }
+        }
+    }
+    
+    .services-content-icon {
+        margin-bottom: 2.5rem !important;
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 2rem !important;
+        }
+        @include media-breakpoint-down(md) {
+            margin-bottom: 2rem;
+        }
+        @include media-breakpoint-down(xs) {
+            padding: 1rem 0;
+        }
+        
+        .media {
+            img {
+                margin-top: 1.5rem;
+                margin-right: 1.2rem;
+                @include media-breakpoint-down(xs) {
+                    margin-top: 0.5rem;
+                }
+            }
+            .media-body {
+                font-size: .95rem;
+                color: $text;
+                h5 {
+                margin-bottom: .2rem;
+                }
+            }
+        }
+    }
+}
